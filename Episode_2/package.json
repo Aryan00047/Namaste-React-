@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "This is Namaste React by Aryan",
   "scripts": {
-    "build": "set PARCEL_CACHE_DIR=.parcel-cache && parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -23,5 +22,10 @@
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
-  }
+  },
+  "browserslist": [
+    "last 2 Chrome version",
+    "last 2 firefox version",
+    "last 2 versions"
+  ]
 }
