@@ -2,3 +2,6 @@ before building, you should always know, what you are going to build
 First step is planning - UI design
 Once we have viual planning in front of us, it is very easier to code
 Everytime build the wireframe first(plan)
+
+inline style is js object -- style = {stylecard} --- or {{css here}}  {} - means there is an js object inside
+{{}} -- here inner {} is js object

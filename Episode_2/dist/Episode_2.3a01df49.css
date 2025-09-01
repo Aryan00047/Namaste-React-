@@ -23,4 +23,29 @@
   margin: 10px;
   padding: 10px;
 }
+
+.search {
+  padding: 10px;
+}
+
+.res-card {
+  width: 200px;
+  height: 300px;
+  margin: 3px;
+  padding: 5px;
+}
+
+.res-card:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.res-logo {
+  width: 100%;
+}
+
+.res-container {
+  flex-wrap: wrap;
+  display: flex;
+}
 /*# sourceMappingURL=Episode_2.3a01df49.css.map */
