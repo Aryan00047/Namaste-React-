@@ -5,3 +5,47 @@ Everytime build the wireframe first(plan)
 
 inline style is js object -- style = {stylecard} --- or {{css here}}  {} - means there is an js object inside
 {{}} -- here inner {} is js object
+
+Passing an argument to a function is like passing prop to a component
+
+(props) or ({resName,.....}) this is destructuring the component on the fly....(destructuring js) both are correct
+
+config driven ui --- industry level practice(every company follows) --- helpful in ui
+our website is driven by data (configs) ex: for delhi ui looks different nd for blr ui looks different.....
+
+data is config
+
+cloundaryImageId is cdn (swiggy uses this)
+to make array data comma seperated -- [].join(, );
+
+const comp = (props) =>{
+    {resData} = props;
+}
+
+resObj = [] --- api data
+
+<RestaurantCard restData={resObj}/> // resData we pass here should be used in props....
+
+we should know best and good practices to write code
+
+destructure the code----
+
+ const {name, loc...} = resData?.data /// you should write ? --- it is optional...
+
+ map, filter and reduce --- you will use map a lot of times in react , it's very important--- learn and remeber this
+
+ you don't have to ignore any warnings...
+
+ unique key property warning in list --- each item should be uniquely identified
+
+ resList.map((restaurant)=>{
+    <RestCard key={restaurant.data.id} resData={restaurant}/>
+ })
+
+ make this habit of always giving key whenever you are using map. 
+
+ Why to use a key?
+If we don't use keys, every card will be considered as new when a new card is added among them and react renders all cards as it treats
+every card as new. This will have performance issues and to optiise, we should use keys, so that when a new card is added react knows what is new and what to render.
+
+ React itself says not ot use index as keys!!! If there is no id in data, then you can use indexes but its not recommended.
