@@ -1,0 +1,10 @@
+Best practice is to make seperate files for spearate components
+Every project always has src folder (source code) -- industry follows this
+Its clean and everybody understands this
+
+Try to match the component name with its file and in Capital letter. It will help other dev to immediately understand what will be there
+
+Some people like to write jsx also... instead of js
+What is a good way? --- it hardly matters both are similar thing. It will make zero diff.
+
+Keep things simple always, don't complicate things
