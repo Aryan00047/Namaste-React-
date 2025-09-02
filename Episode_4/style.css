@@ -24,9 +24,9 @@
 }
 
 .res-container{
+    background-color: #f0f0f0;
     margin: 5px;
-    width: 150px;
-    height: 300px;
+    width: 200px;
     padding: 5px;
 }
 
@@ -36,6 +36,7 @@
 }
 
 .res-img{
+    height: 10rem;
     width: 100%;
 }
 
