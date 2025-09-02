@@ -19,3 +19,5 @@ export default Header.... (default export) and is imported like import Header fr
 
 or if we have to export multiple things then we have to use named export
 export const CDN_URL.... (named export) and is imported like import { CDN_URL } from "../utils/constants";
+
+It's always a good practice to keep your components small, create a new file for new component always
