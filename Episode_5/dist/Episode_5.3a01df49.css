@@ -49,10 +49,15 @@ body {
   padding: 10px;
 }
 
-.Footer {
+.footer {
   border: 1px solid #000;
   justify-content: space-between;
   margin-top: 10px;
   display: flex;
+}
+
+.filter-btn {
+  cursor: pointer;
+  margin: 10px;
 }
 /*# sourceMappingURL=Episode_5.3a01df49.css.map */

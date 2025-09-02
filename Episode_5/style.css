@@ -49,9 +49,14 @@ body{
     padding: 10px;
 }
 
-.Footer{
+.footer{
     margin-top: 10px;
     display: flex;
     justify-content: space-between; 
     border: 1px solid black;
+}
+
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
 }

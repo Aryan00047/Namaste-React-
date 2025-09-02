@@ -21,3 +21,14 @@ or if we have to export multiple things then we have to use named export
 export const CDN_URL.... (named export) and is imported like import { CDN_URL } from "../utils/constants";
 
 It's always a good practice to keep your components small, create a new file for new component always
+
+
+React Hooks -- to make webiste Dynamic
+ onClick()
+
+Hooks --- A normal JS function given to us by react. Its a Pre Build , comes with super power has logi written behind the scenes
+(Normal Js Utility Functions)
+
+Two Very Important React Hooks
+
+useState() (70%), useEffect()(20%), other hooks(10%)

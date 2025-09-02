@@ -4,8 +4,8 @@ import RestCards from "./RestCards";
 const Body = () =>{
     return(
         <div>
-            <div className="search">
-                <h4>Search</h4>
+            <div className="filter">
+                <button className="filter-btn" onClick={()=>{}}>Top Rated Restaurants</button>
             </div>
             <div className="res-cards">
                 {resList.filter((data) => data.info && data.info.id)
