@@ -8,3 +8,14 @@ Some people like to write jsx also... instead of js
 What is a good way? --- it hardly matters both are similar thing. It will make zero diff.
 
 Keep things simple always, don't complicate things
+
+import Header  from "./components/Header"; -- even if we don't use .js or .jsx, react will automatically assume this as js object.
+
+Never ever keep hard coded data in the component, we add them in utils folder (config or common is also used as a name), will start from small letter
+
+A module can only have one default export. 
+So, one way to export is using default export (for single thing)
+export default Header.... (default export) and is imported like import Header from "path";
+
+or if we have to export multiple things then we have to use named export
+export const CDN_URL.... (named export) and is imported like import { CDN_URL } from "../utils/constants";
