@@ -18546,26 +18546,31 @@ var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
     const [list, setList] = (0, _react.useState)((0, _mockDataDefault.default));
+    const [showFiltered, setShowFiltered] = (0, _react.useState)(false);
+    const handleClick = ()=>{
+        if (showFiltered) {
+            const filteredList = list.filter((res)=>res.info.avgRating > 4.5);
+            setList(filteredList);
+        } else setList((0, _mockDataDefault.default));
+        setShowFiltered(!showFiltered);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "filter",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                     className: "filter-btn",
-                    onClick: ()=>{
-                        const filteredList = list.filter((res)=>res.info.avgRating > 4.5);
-                        setList(filteredList);
-                    },
-                    children: "Top Rated Restaurants"
+                    onClick: handleClick,
+                    children: showFiltered ? "Top Rated Restaurants" : "Show All"
                 }, void 0, false, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 11,
-                    columnNumber: 17
+                    lineNumber: 23,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 10,
-                columnNumber: 13
+                lineNumber: 22,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-cards",
@@ -18573,22 +18578,22 @@ const Body = ()=>{
                         info: data.info
                     }, data.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 19,
-                        columnNumber: 21
+                        lineNumber: 34,
+                        columnNumber: 13
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 16,
-                columnNumber: 13
+                lineNumber: 30,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 9,
-        columnNumber: 9
+        lineNumber: 21,
+        columnNumber: 5
     }, undefined);
 };
-_s(Body, "oiR2u5NGaHwoY1ogrT9ny2oWPrw=");
+_s(Body, "vn+udCxEd1Pc+tjXGpLkC72pGIs=");
 _c = Body;
 exports.default = Body;
 var _c;

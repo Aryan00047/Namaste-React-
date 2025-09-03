@@ -33,3 +33,24 @@ Two Very Important React Hooks:
 useState() (70%), useEffect()(20%), other hooks(10%)
 useState(data, setData) = useState([]) //inside() the value we add is default value --- [] is its default value.
 Whenever a state variable changes, react will re-render the component
+
+React makes DOM operation superfast.
+
+Reconcilation Algorithm(React Fibre)
+                                                    Res-Container
+Card    Card    Card    Card    Card    Card    Card    Card    Card    Card    Card    Card    Card    Card    Card    Card 
+                These are cards (old V DOM)
+
+        Card    Card    Card    Card    Card    Card    Card    Card
+                These are filtered Cards, after filter (new V DOM) --- Updated one
+
+Virtual DOM is an representation of actual DOM, basically an object (react elements)
+
+<div><div><div/><div/> --- this is actual DOM
+
+if you do console.log(<Body/>) --- it will return an object --- virtual DOM
+
+What is diff algorithm --- it basically finds out difference between update virtual DOM and Actual DOM
+
+This all is knows as React Fibre, in React 16 this came, a new way of finding the diff and updating the DOM
+
