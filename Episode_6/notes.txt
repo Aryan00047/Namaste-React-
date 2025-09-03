@@ -36,3 +36,19 @@ Because in first approach, our page is not render for 500ms and after that sudde
 But with second approach, we load the page and load whatever we can (skeleton) and then slowly the website loads.
 With this, website doesn't lags and runs smoothly. Render cycles are very fast, so we don't have to bother about how much times we are 
 rendering, we bother but not for rendering 2 times....
+
+React useEffect() hook:
+useEffect(()=>{}, [dependency])--- takes two arguments --- 
+When will it be called? After the component renders
+
+fetch() -- superpower that js engine have, it is given to us by browsers not javascript
+
+async/await -- practice that industry follows
+
+cors extension to bypass cors error while calling apis from other domains(swiggy)
+
+optional chaining --- it is a good way of handling data 
+?.data?.dat....
+
+showing a spinner is not a good way and in the industry, there is concept known as shimmer UI
+--- it means we load the fake page, until we render the actual UI ---- it is very important these days... much better User experience
