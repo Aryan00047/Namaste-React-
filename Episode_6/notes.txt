@@ -1,0 +1,38 @@
+Monolith v/s MicroServices
+
+Monolith has everything inside it
+    - Api
+    - UI
+    - Auth
+    - DB
+    - SMS
+    -....
+Microservices 
+
+(These are different services)
+Backend, UI, AUTH, DB, SMS, EMAIL.... --- These are microservices and combined together forms a big app
+These services have to interct with each other.
+
+The project we are making is UI microservice, and advantage is we can have different tech stack for different microservice.
+(for ex: UI in react, backend in node, DB in sql, SMS in java, email in python)
+
+How these services are connected --- all these services runs on their specific ports.
+On different ports, we can deploy different services..
+All these ports can be mapped to a domain name --- for ex /sms, /ui, /email and so on.... 
+
+How do these services interact?
+They will make call to specific ports or maps (/sms) of services they want to interact with.
+
+There are two approaches on how backend(api) interacts with ui:
+1. As soon as page loads, we can make an api call, wait for data to come and render the ui.
+Suppose api will take 500ms, and after 500ms our ui renders
+
+2. As soon as page loads, we will render our UI, now we will make an api call. As soon as we get api data, we will render our 
+application(ui) with the data
+
+In react, we will be using second approach and it is a better approach and gives us a better UX.
+Why?
+Because in first approach, our page is not render for 500ms and after that suddenly loads.
+But with second approach, we load the page and load whatever we can (skeleton) and then slowly the website loads.
+With this, website doesn't lags and runs smoothly. Render cycles are very fast, so we don't have to bother about how much times we are 
+rendering, we bother but not for rendering 2 times....

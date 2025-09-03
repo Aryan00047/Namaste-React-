@@ -1,19 +1,33 @@
 {
-  "name": "namastereact",
+  "name": "episode_4",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is Namaste React by Aryan",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aryan00047/Namaste-React-.git"
   },
-  "author": "",
+  "keywords": [],
+  "author": "Aryan Gupta",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Aryan00047/Namaste-React-/issues"
   },
-  "homepage": "https://github.com/Aryan00047/Namaste-React-#readme"
+  "homepage": "https://github.com/Aryan00047/Namaste-React-#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserslist": [
+    "last 2 Chrome version",
+    "last 2 firefox version",
+    "last 2 versions"
+  ]
 }
