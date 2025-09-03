@@ -29,6 +29,7 @@ React Hooks -- to make webiste Dynamic
 Hooks --- A normal JS function given to us by react. Its a Pre Build , comes with super power has logi written behind the scenes
 (Normal Js Utility Functions)
 
-Two Very Important React Hooks
-
+Two Very Important React Hooks:
 useState() (70%), useEffect()(20%), other hooks(10%)
+useState(data, setData) = useState([]) //inside() the value we add is default value --- [] is its default value.
+Whenever a state variable changes, react will re-render the component
