@@ -62,3 +62,13 @@ ternary operator ? :
 As soon as some part inside a component changes, whole component gets rendered, not that specific part( for example buttonName)
 useState is used to track the values, as it cannot track the updated elements using js only. React will not get rendered unless its 
 state changes.
+
+onChange() --- it is an important method , it is used to update values of textbox that are bind by state, without this, default state 
+value persists and new value never gets entered....
+Each time you eneter a keyword, or a character, react re renders the component because onChange is getting called and state is updating 
+everytime, and react compares old virtual dom with new one.... for 94 chars, 94 times it is rendering, but react updates only the
+updated value, not all things in the component, that's why it is fast
+
+Whenever we change local state variable of react, react re renders the component
+
+Whenver, State React Variabl updates react triggers reconcilation cycle(re-renders the component)

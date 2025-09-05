@@ -79,3 +79,10 @@ body {
   margin: 20px;
   background-color: #f0f0f0;
 }
+
+.login-btn{
+  background-color: #f0f0f0;
+  border: 1px solid black;
+  padding: 5px 10px;
+
+}
