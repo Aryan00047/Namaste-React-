@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import resList from "../utils/mockData";
 import RestCards from "./RestCards";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
   const [list, setList] = useState([]);
@@ -39,24 +39,15 @@ const Body = () => {
 }, []);
 
 
-  if(isLoading){
-    return(
-      <div className="shimmer-container">
-        <div className="shimmer-card"><h3></h3></div>
-        <div className="shimmer-card"><h3></h3></div> 
-        <div className="shimmer-card"><h3></h3></div>
-        <div className="shimmer-card"><h3></h3></div>
-        <div className="shimmer-card"><h3></h3></div>
-        <div className="shimmer-card"><h3></h3></div>
-        <div className="shimmer-card"><h3></h3></div>
-        <div className="shimmer-card"><h3></h3></div>
-        <div className="shimmer-card"><h3></h3></div>
-        <div className="shimmer-card"><h3></h3></div>
-        <div className="shimmer-card"><h3></h3></div>
-      </div>
-    )
-  }
-  return (
+//conditional rendering
+  // if(isLoading){
+  //   return(
+  //     <div className="shimmer-container">
+
+  //     </div>
+  //   )
+  // }
+  return isLoading ? (<Shimmer/>) : (
     <div>
       <div className="filter">
         <button

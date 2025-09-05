@@ -52,3 +52,13 @@ optional chaining --- it is a good way of handling data
 
 showing a spinner is not a good way and in the industry, there is concept known as shimmer UI
 --- it means we load the fake page, until we render the actual UI ---- it is very important these days... much better User experience
+
+When user see shimmer ui , it makes fake impression that cards are coing here, and user does not feel website is low,
+and its very helpful for eyes also as page is smooth --- conditional rendering  is used here (component rendered according to 
+condition)
+
+ternary operator ? :
+
+As soon as some part inside a component changes, whole component gets rendered, not that specific part( for example buttonName)
+useState is used to track the values, as it cannot track the updated elements using js only. React will not get rendered unless its 
+state changes.
