@@ -72,3 +72,5 @@ updated value, not all things in the component, that's why it is fast
 Whenever we change local state variable of react, react re renders the component
 
 Whenver, State React Variabl updates react triggers reconcilation cycle(re-renders the component)
+
+The people who code slow, have to debug less but people who code faster will take a lot of time to debug
