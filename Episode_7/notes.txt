@@ -26,3 +26,8 @@ React Router DOM gives us access to an important hook --- useRouteError. It tell
 children:[]
 
 Outlet is a component given by react-router-dom for rendering children conditionally according to path
+We won't see outlet in html on browser, it will be replaced by respective component that is rendered.
+
+Never use anchor tag in react , especialy if we are using router, because it refreshes the page.
+Link is  superpowerful component given by react-router-dom, it does not refreshes the page still redirects to the route
+<Link to=""></Link>

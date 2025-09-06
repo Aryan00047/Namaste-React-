@@ -16187,6 +16187,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _constants = require("../utils/constants");
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const Header = ()=>{
     _s();
@@ -16199,7 +16200,7 @@ const Header = ()=>{
                 src: (0, _constants.LOGO_URL)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16207,31 +16208,59 @@ const Header = ()=>{
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Home"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 12,
-                            columnNumber: 17
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "About Us"
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/",
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 13,
+                                columnNumber: 21
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 13,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Contact Us"
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/about",
+                                children: "About Us"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 14,
+                                columnNumber: 21
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 14,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Cart"
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/contact",
+                                children: "Contact Us"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 15,
+                                columnNumber: 21
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 15,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/cart",
+                                children: "Cart"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 16,
+                                columnNumber: 21
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 16,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -16242,24 +16271,24 @@ const Header = ()=>{
                             children: btn
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 16,
+                            lineNumber: 17,
                             columnNumber: 17
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 11,
+                    lineNumber: 12,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 9
     }, undefined);
 };
@@ -16274,7 +16303,7 @@ $RefreshReg$(_c, "Header");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dIVBf":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react-router-dom":"61z4w"}],"dIVBf":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
@@ -18590,459 +18619,7 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"loQlg":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$8a58 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$8a58.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8a58.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _restCards = require("./RestCards");
-var _restCardsDefault = parcelHelpers.interopDefault(_restCards);
-var _shimmer = require("./Shimmer");
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-var _s = $RefreshSig$();
-const Body = ()=>{
-    _s();
-    const [list, setList] = (0, _react.useState)([]);
-    const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
-    const [showFiltered, setShowFiltered] = (0, _react.useState)(true);
-    const [isLoading, setIsLoading] = (0, _react.useState)(true);
-    const [searchTerm, setSearchTerm] = (0, _react.useState)("");
-    const handleClick = ()=>{
-        if (showFiltered) {
-            const filteredList = allRestaurants.filter((res)=>res.avgRating > 4.5);
-            setList(filteredList);
-        } else setList(allRestaurants);
-        setShowFiltered(!showFiltered);
-    };
-    const searchRestaurants = ()=>{
-        const restaurants_list = allRestaurants.filter((res)=>res.name.toLowerCase().includes(searchTerm.toLowerCase()));
-        console.log(restaurants_list);
-        setList(restaurants_list);
-    };
-    (0, _react.useEffect)(()=>{
-        const fetchData = async ()=>{
-            try {
-                const res = await fetch("https://www.swiggy.com/dapi/restaurants/search/v3?lat=12.9261243&lng=77.60707029999999&str=north%20indian&trackingId=undefined&submitAction=ENTER&queryUniqueId=bccdc5ae-30de-39ce-57d8-d7b8c618d783");
-                const data = await res.json();
-                const restaurants = data?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards?.map((c)=>c.card.card.info);
-                console.log(restaurants);
-                setAllRestaurants(restaurants);
-                setList(restaurants);
-                setIsLoading(false);
-            } catch (error) {
-                console.log(error);
-                setIsLoading(false);
-            }
-        };
-        fetchData();
-    }, []);
-    //conditional rendering
-    // if(isLoading){
-    //   return(
-    //     <div className="shimmer-container">
-    //     </div>
-    //   )
-    // }
-    return isLoading ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-        fileName: "src/components/Body.js",
-        lineNumber: 58,
-        columnNumber: 23
-    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "buttons",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        className: "search-text",
-                        type: "text",
-                        onChange: (e)=>{
-                            setSearchTerm(e.target.value);
-                        },
-                        value: searchTerm
-                    }, void 0, false, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 61,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "search-btn",
-                        onClick: searchRestaurants,
-                        children: "Search"
-                    }, void 0, false, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 62,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "filter-btn",
-                        onClick: handleClick,
-                        children: showFiltered ? "Top Rated Restaurants" : "Show All"
-                    }, void 0, false, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 63,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Body.js",
-                lineNumber: 60,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "res-cards",
-                children: list.filter((data)=>data && data.id).map((data)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restCardsDefault.default), {
-                        info: data
-                    }, data.id, false, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 74,
-                        columnNumber: 13
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 70,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Body.js",
-        lineNumber: 59,
-        columnNumber: 5
-    }, undefined);
-};
-_s(Body, "wQRv7PjnVQ+A0tmE8uJkt0mnhws=");
-_c = Body;
-exports.default = Body;
-var _c;
-$RefreshReg$(_c, "Body");
-
-  $parcel$ReactRefreshHelpers$8a58.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./RestCards":"9XGHY","./Shimmer":"fSZbx","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"9XGHY":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$5fd7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$5fd7.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5fd7.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _constants = require("../utils/constants");
-const RestCards = ({ info })=>{
-    const { name, locality, cuisines = [], cloudinaryImageId, avgRating, sla } = info;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "res-container",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "res-img",
-                alt: name,
-                src: (0, _constants.CDN_URL) + `${cloudinaryImageId}`
-            }, void 0, false, {
-                fileName: "src/components/RestCards.js",
-                lineNumber: 7,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: name
-            }, void 0, false, {
-                fileName: "src/components/RestCards.js",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "src/components/RestCards.js",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: locality
-            }, void 0, false, {
-                fileName: "src/components/RestCards.js",
-                lineNumber: 10,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: avgRating ?? 'N/A'
-            }, void 0, false, {
-                fileName: "src/components/RestCards.js",
-                lineNumber: 11,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: [
-                    sla.deliveryTime,
-                    " min"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/RestCards.js",
-                lineNumber: 12,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/RestCards.js",
-        lineNumber: 6,
-        columnNumber: 9
-    }, undefined);
-};
-_c = RestCards;
-exports.default = RestCards;
-var _c;
-$RefreshReg$(_c, "RestCards");
-
-  $parcel$ReactRefreshHelpers$5fd7.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"fSZbx":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$9ecf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$9ecf.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9ecf.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Shimmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "shimmer-container",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 4,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 4,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 5,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 5,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 6,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 6,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 7,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 7,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 8,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 8,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 9,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 9,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 10,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 10,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 11,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 11,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 12,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 12,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 13,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 13,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 14,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 14,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 15,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 15,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 16,
-                    columnNumber: 40
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 16,
-                columnNumber: 10
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Shimmer.js",
-        lineNumber: 3,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Shimmer;
-exports.default = Shimmer;
-var _c;
-$RefreshReg$(_c, "Shimmer");
-
-  $parcel$ReactRefreshHelpers$9ecf.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"lq1kZ":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$a646 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$a646.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a646.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "footer",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: "Copywright"
-            }, void 0, false, {
-                fileName: "src/components/Footer.js",
-                lineNumber: 4,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: "Social Media"
-            }, void 0, false, {
-                fileName: "src/components/Footer.js",
-                lineNumber: 5,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Footer.js",
-        lineNumber: 3,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Footer;
-exports.default = Footer;
-var _c;
-$RefreshReg$(_c, "Footer");
-
-  $parcel$ReactRefreshHelpers$a646.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"61z4w":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"61z4w":[function(require,module,exports,__globalThis) {
 /**
  * React Router DOM v6.15.0
  *
@@ -24912,7 +24489,459 @@ function getDoneFetcher(data) {
     return fetcher;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"bv2mH":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"loQlg":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$8a58 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$8a58.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8a58.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _restCards = require("./RestCards");
+var _restCardsDefault = parcelHelpers.interopDefault(_restCards);
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _s = $RefreshSig$();
+const Body = ()=>{
+    _s();
+    const [list, setList] = (0, _react.useState)([]);
+    const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
+    const [showFiltered, setShowFiltered] = (0, _react.useState)(true);
+    const [isLoading, setIsLoading] = (0, _react.useState)(true);
+    const [searchTerm, setSearchTerm] = (0, _react.useState)("");
+    const handleClick = ()=>{
+        if (showFiltered) {
+            const filteredList = allRestaurants.filter((res)=>res.avgRating > 4.5);
+            setList(filteredList);
+        } else setList(allRestaurants);
+        setShowFiltered(!showFiltered);
+    };
+    const searchRestaurants = ()=>{
+        const restaurants_list = allRestaurants.filter((res)=>res.name.toLowerCase().includes(searchTerm.toLowerCase()));
+        console.log(restaurants_list);
+        setList(restaurants_list);
+    };
+    (0, _react.useEffect)(()=>{
+        const fetchData = async ()=>{
+            try {
+                const res = await fetch("https://www.swiggy.com/dapi/restaurants/search/v3?lat=12.9261243&lng=77.60707029999999&str=north%20indian&trackingId=undefined&submitAction=ENTER&queryUniqueId=bccdc5ae-30de-39ce-57d8-d7b8c618d783");
+                const data = await res.json();
+                const restaurants = data?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards?.map((c)=>c.card.card.info);
+                console.log(restaurants);
+                setAllRestaurants(restaurants);
+                setList(restaurants);
+                setIsLoading(false);
+            } catch (error) {
+                console.log(error);
+                setIsLoading(false);
+            }
+        };
+        fetchData();
+    }, []);
+    //conditional rendering
+    // if(isLoading){
+    //   return(
+    //     <div className="shimmer-container">
+    //     </div>
+    //   )
+    // }
+    return isLoading ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 58,
+        columnNumber: 23
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "buttons",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: "search-text",
+                        type: "text",
+                        onChange: (e)=>{
+                            setSearchTerm(e.target.value);
+                        },
+                        value: searchTerm
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 61,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "search-btn",
+                        onClick: searchRestaurants,
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 62,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "filter-btn",
+                        onClick: handleClick,
+                        children: showFiltered ? "Top Rated Restaurants" : "Show All"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 63,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Body.js",
+                lineNumber: 60,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-cards",
+                children: list.filter((data)=>data && data.id).map((data)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restCardsDefault.default), {
+                        info: data
+                    }, data.id, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 74,
+                        columnNumber: 13
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 70,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Body.js",
+        lineNumber: 59,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Body, "wQRv7PjnVQ+A0tmE8uJkt0mnhws=");
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$8a58.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./RestCards":"9XGHY","./Shimmer":"fSZbx","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"9XGHY":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$5fd7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$5fd7.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5fd7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constants = require("../utils/constants");
+const RestCards = ({ info })=>{
+    const { name, locality, cuisines = [], cloudinaryImageId, avgRating, sla } = info;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "res-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "res-img",
+                alt: name,
+                src: (0, _constants.CDN_URL) + `${cloudinaryImageId}`
+            }, void 0, false, {
+                fileName: "src/components/RestCards.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: name
+            }, void 0, false, {
+                fileName: "src/components/RestCards.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: cuisines.join(", ")
+            }, void 0, false, {
+                fileName: "src/components/RestCards.js",
+                lineNumber: 9,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: locality
+            }, void 0, false, {
+                fileName: "src/components/RestCards.js",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: avgRating ?? 'N/A'
+            }, void 0, false, {
+                fileName: "src/components/RestCards.js",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    sla.deliveryTime,
+                    " min"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestCards.js",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/RestCards.js",
+        lineNumber: 6,
+        columnNumber: 9
+    }, undefined);
+};
+_c = RestCards;
+exports.default = RestCards;
+var _c;
+$RefreshReg$(_c, "RestCards");
+
+  $parcel$ReactRefreshHelpers$5fd7.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"fSZbx":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$9ecf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$9ecf.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9ecf.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "shimmer-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 4,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 4,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 5,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 5,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 6,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 6,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 7,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 7,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 8,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 8,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 9,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 9,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 10,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 10,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 11,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 11,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 12,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 12,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 13,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 13,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 14,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 14,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 15,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 15,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 16,
+                    columnNumber: 40
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 16,
+                columnNumber: 10
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Shimmer.js",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Shimmer;
+exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$9ecf.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"lq1kZ":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a646 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$a646.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a646.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "footer",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: "Copywright"
+            }, void 0, false, {
+                fileName: "src/components/Footer.js",
+                lineNumber: 4,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: "Social Media"
+            }, void 0, false, {
+                fileName: "src/components/Footer.js",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Footer.js",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Footer;
+exports.default = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$a646.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"bv2mH":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$f021 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$f021.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
