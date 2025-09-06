@@ -12,5 +12,17 @@ Never call useState() outside of the component, it is used for creating localsid
 top of component , because react is a single thread language, it reads from top to bottom.... 
 Never use inside if-else/ for-loop/ function, this can create in-consistensies in the program.
 
+React-Router-DOM --- It is a react library
 
+createBrowserRouter is a mostly used way, but there are other routers also, read in docs
+write everything manually, while learning, use faster methods when you have experience
+shortcut for component creation - rafce
 
+RouterProvider
+
+React Router DOM gives us access to an important hook --- useRouteError. It tells us more details regarding the error
+
+//children route
+children:[]
+
+Outlet is a component given by react-router-dom for rendering children conditionally according to path
