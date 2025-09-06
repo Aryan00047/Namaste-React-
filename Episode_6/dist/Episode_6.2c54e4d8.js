@@ -16226,7 +16226,7 @@ $RefreshReg$(_c, "Header");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U"}],"dIVBf":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dIVBf":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
@@ -18565,12 +18565,18 @@ const Body = ()=>{
     const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
     const [showFiltered, setShowFiltered] = (0, _react.useState)(true);
     const [isLoading, setIsLoading] = (0, _react.useState)(true);
+    const [searchTerm, setSearchTerm] = (0, _react.useState)("");
     const handleClick = ()=>{
         if (showFiltered) {
             const filteredList = allRestaurants.filter((res)=>res.avgRating > 4.5);
             setList(filteredList);
         } else setList(allRestaurants);
         setShowFiltered(!showFiltered);
+    };
+    const searchRestaurants = ()=>{
+        const restaurants_list = allRestaurants.filter((res)=>res.name.toLowerCase().includes(searchTerm.toLowerCase()));
+        console.log(restaurants_list);
+        setList(restaurants_list);
     };
     (0, _react.useEffect)(()=>{
         const fetchData = async ()=>{
@@ -18598,24 +18604,47 @@ const Body = ()=>{
     // }
     return isLoading ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 50,
+        lineNumber: 58,
         columnNumber: 23
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "filter",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "filter-btn",
-                    onClick: handleClick,
-                    children: showFiltered ? "Top Rated Restaurants" : "Show All"
-                }, void 0, false, {
-                    fileName: "src/components/Body.js",
-                    lineNumber: 53,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
+                className: "buttons",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: "search-text",
+                        type: "text",
+                        onChange: (e)=>{
+                            setSearchTerm(e.target.value);
+                        },
+                        value: searchTerm
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 61,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "search-btn",
+                        onClick: searchRestaurants,
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 62,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "filter-btn",
+                        onClick: handleClick,
+                        children: showFiltered ? "Top Rated Restaurants" : "Show All"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 63,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 52,
+                lineNumber: 60,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18624,22 +18653,22 @@ const Body = ()=>{
                         info: data
                     }, data.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 64,
+                        lineNumber: 74,
                         columnNumber: 13
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 60,
+                lineNumber: 70,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 51,
+        lineNumber: 59,
         columnNumber: 5
     }, undefined);
 };
-_s(Body, "+jvbcdPaHFpt/xUPbEZYvdKQCX8=");
+_s(Body, "wQRv7PjnVQ+A0tmE8uJkt0mnhws=");
 _c = Body;
 exports.default = Body;
 var _c;

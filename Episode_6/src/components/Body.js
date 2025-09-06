@@ -7,6 +7,7 @@ const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [showFiltered, setShowFiltered] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleClick = ()=>{
     if(showFiltered){
@@ -17,6 +18,12 @@ const Body = () => {
         setList(allRestaurants);
     }
     setShowFiltered(!showFiltered);
+  }
+
+    const searchRestaurants = () => {
+    const restaurants_list = allRestaurants.filter((res)=>res.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    console.log(restaurants_list);
+    setList(restaurants_list );    
   }
 
   useEffect(()=>{
@@ -47,9 +54,12 @@ const Body = () => {
   //     </div>
   //   )
   // }
+
   return isLoading ? (<Shimmer/>) : (
     <div>
-      <div className="filter">
+      <div className="buttons">
+        <input className="search-text" type="text" onChange={(e)=>{setSearchTerm(e.target.value)}} value={searchTerm}/>
+        <button className="search-btn" onClick={searchRestaurants}>Search</button>
         <button
           className="filter-btn"
           onClick={handleClick}
