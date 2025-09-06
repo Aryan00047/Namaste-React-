@@ -1,0 +1,16 @@
+when is useEffect called? ------- important for interview
+
+useEffect(()=>{},[]) // syntax
+
+It is called after every render of component. Everytime out component renders, useEffect is called, with no dependency array.
+But with dependency array, useEffect(()=>{},)
+
+if empty - useEffect(()=>{},[]) --- usEffect is called ust once, initially. It wont be called again and again , even if component re renders.
+if having some dependency --- useEffect(()=>{},[...]) --- it is called everytime dependency changes. 
+
+Never call useState() outside of the component, it is used for creating localside variables inside the component, always call in the 
+top of component , because react is a single thread language, it reads from top to bottom.... 
+Never use inside if-else/ for-loop/ function, this can create in-consistensies in the program.
+
+
+

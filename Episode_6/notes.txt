@@ -74,3 +74,8 @@ Whenever we change local state variable of react, react re renders the component
 Whenver, State React Variabl updates react triggers reconcilation cycle(re-renders the component)
 
 The people who code slow, have to debug less but people who code faster will take a lot of time to debug
+
+<----------------- CORS ISSUE -------------------------------->
+CORSProxy.io --- paste this before api usrl and api will work... But it has limits, its not for production only for dev purpose.
+Use this, if cors plugin fails!
+
