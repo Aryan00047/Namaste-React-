@@ -29,5 +29,25 @@ Outlet is a component given by react-router-dom for rendering children condition
 We won't see outlet in html on browser, it will be replaced by respective component that is rendered.
 
 Never use anchor tag in react , especialy if we are using router, because it refreshes the page.
-Link is  superpowerful component given by react-router-dom, it does not refreshes the page still redirects to the route
+Link is  super-powerful component given by react-router-dom, it does not refreshes the page still redirects to the route
 <Link to=""></Link>
+
+Two types of routing in web applications:
+1. Client side routing --- <link> is client side routing, we are not making network call, our app is already loaded, it just loads the component
+after that --- this is also known as single page application
+2. Server side routing --- <a> tag uses this, makes network call and page is coming from server
+
+//dynamic routing....
+when we click on restaurant is menu gets fetched and this works dynamically.... using api data
+/restaurants/:resId --- :resId is for dynamic id
+
+speak while you code, it is am important skill while explaining interviewer. Speak while writing code!!!
+
+useParams is a hook given by react-roter-dom , it is used to extract params from urls. Params is an object.
+const {resId} = useParams();
+
+Key should be on the parnt jsx that is getting mapped. --- map(<Link key="id"><ResCar></Link>)
+
+Link a component given by react but behind the scenes , it uses anchor tag!
+Link is a wrapper over anchor tag ---  in inspect you wil se <a> instead of <link> . Browsers do not understand <link>
+They understand <a> tag
