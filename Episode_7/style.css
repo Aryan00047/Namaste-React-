@@ -86,3 +86,26 @@ body {
   border: 1px solid black;
   padding: 5px 10px;
 }
+
+.menu-card {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; /* pushes content left, image right */
+  align-items: center;           /* vertically center */
+  width: 400px;
+  height: 200px;
+  padding: 1rem;
+  border: 1px solid #ccc; /* optional for clarity */
+  border-radius: 8px;     /* optional */
+}
+
+.menu-card-content {
+  flex: 1; /* content takes all remaining space */
+}
+
+.menu-img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  margin-left: 1rem; /* space between text and image */
+}
