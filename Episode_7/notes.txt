@@ -26,3 +26,7 @@ React Router DOM gives us access to an important hook --- useRouteError. It tell
 children:[]
 
 Outlet is a component given by react-router-dom for rendering children conditionally according to path
+
+<Link /> is a special component given by reaact-router-dom and behind the scenes it uses <a> tag. 
+It is a wrapper over <a/> tag. ReactRouterDOM keeps track and prevents refreshing of page. Browser understands <a/> tag.
+
