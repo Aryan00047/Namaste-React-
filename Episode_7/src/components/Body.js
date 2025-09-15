@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import RestCards from "./RestCards";
 import Shimmer from "./Shimmer";
+import { RESTAURANT_URL } from "../utils/constants";
 
 const Body = () => {
   const [list, setList] = useState([]);
@@ -29,7 +30,7 @@ const Body = () => {
   useEffect(()=>{
     const fetchData = async() => {
       try {
-        const res = await fetch("https://www.swiggy.com/dapi/restaurants/search/v3?lat=12.9261243&lng=77.60707029999999&str=north%20indian&trackingId=undefined&submitAction=ENTER&queryUniqueId=bccdc5ae-30de-39ce-57d8-d7b8c618d783");
+        const res = await fetch(RESTAURANT_URL);
         const data = await res.json();
         const restaurants = data?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards
         ?.map((c)=> c.card.card.info);
