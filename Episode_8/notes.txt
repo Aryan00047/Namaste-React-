@@ -1,0 +1,78 @@
+Class based components are important for interviews, Many people ask them in interviews becaue many projects use legacy code currently.
+
+What is functional component?
+Normal js function --- returns jsx
+
+What is classs component?
+Normal class component --- has render method that returns piece of jsx!
+
+In react class based component is a component whcih extends eract based component and has a render method to return a jsx.
+class User extends React.Component {
+    constructor(props){
+        super(props);
+    }
+    render(){} --- returns a piece of jsx
+};
+
+can write class like this also:
+
+import { Component } from "react";
+
+class About extends Component{
+    
+}
+
+------------------------------------------------------------------------------------------------------
+props in class:
+
+create constructor in class to recieve props.
+use super(props)
+use this to access the props in class
+
+--- functions are invoked 
+--- instance of class is created
+
+Earlier, state was created when we create instance of a class...
+Loading a class based component means creating instance of class and that's when constructor is called.
+This is the best way to create state variables and props
+
+this.state = {} --- state is a big whole object
+we write multiple states within this.state in class based component, not multiple states like in functional component.
+Also, behind the scenes, react converts multiple states from functional components in one whole object, linke in class component
+
+//NEVER UPDATE STATE VARIABLE DIRECTLY, even in functional component we use setCount
+this.setState({})
+
+this.setState({
+    count: count-1
+})
+
+
+you can update multiple things together also, its rare case but if it comes don't create multiple setState for same button
+
+Importnat question: 
+What is lifecycle of react calss based component?
+
+when component is mounting, first constructor is called, then it is rendered. And after component is mounted, componentDidMount()
+is called.
+
+About class is parent, User class is child:
+
+parent constructor called
+parent render called
+Child constructor is called
+Child render is called
+Child componentDidMount() is called
+arent componentDidMount() is Called
+
+<This is the lifecycle of class based component>
+
+Why it happens? Because when parent component renders it see a class inside it, then it first loads that class and oncle all children
+are loaded then, mounting of parent class finishes and then componentDidMount() of parent is called.
+
+This is very important for interview.
+
+ComponentDidMount() is used for API calls, because first react component loads then api is called, this makes react component loading
+faster.
+
+
