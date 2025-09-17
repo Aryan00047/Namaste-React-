@@ -7,13 +7,13 @@ class User extends React.Component {
             count : 0,
             // count2: 2,
         };
-        console.log("Child constructor is called");
+        console.log(this.props.name + "Child constructor is called");
     }
     componentDidMount(){
-        console.log("Child componentDidMount() is called");
+        console.log(this.props.name + "Child componentDidMount() is called");
     }
     render(){
-        console.log("Child render is called");
+        console.log(this.props.name + "Child render is called");
         const {name,location} = this.props;
         const {count} = this.state;
         return(

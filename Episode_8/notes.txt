@@ -76,3 +76,34 @@ ComponentDidMount() is used for API calls, because first react component loads t
 faster.
 
 
+A complex case:
+If we have multiple children in a parent, then first render cycle will be completed then commit cycle.
+
+React lifecycle has two parts:
+1. Render
+2. Commit
+
+React does executions in batches to make the process faster.
+
+Render cycle loads the component(mount)
+After loading, commit cycle happens where componentDidMount() is called.
+
+Why this happens?
+Because DOM manipulation is expensive, and in batches react makes the process faster. This is the reason react is faster.
+
+Flow: For Two children
+
+Parent Constructor
+Parent Render
+    FirstChild Constructor
+    FirstChild Render
+    
+    SecondChild Constructor
+    SecondChild Render
+
+    FirstChild componentDidMount()
+    SecondChild componentDidMount()
+
+Parent componentDidMount()
+
+Can refer react lifecycle proce chart

@@ -13,17 +13,18 @@ import User from "./UserClass";
 class About extends Component{
     constructor(){
         super();
-        console.log("parent constructor called");
+        console.log("Parent constructor called");
     }
     componentDidMount(){
-        console.log("parent componentDidMount() is Called")
+        console.log("Parent componentDidMount() is Called")
     }
     render(){
-        console.log("parent render called");
+        console.log("Parent render called");
         return(
             <div>
                 <h1>About US</h1>
-                <User name={"Aryan Gupta"} location={"Bangalore"}/>
+                <User name={"First"} location={"Bangalore"}/>
+                <User name={"Second"} location={"Mumbai"}/>
             </div>
         )
     }

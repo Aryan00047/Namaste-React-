@@ -24971,13 +24971,13 @@ var _userClassDefault = parcelHelpers.interopDefault(_userClass);
 class About extends (0, _react.Component) {
     constructor(){
         super();
-        console.log("parent constructor called");
+        console.log("Parent constructor called");
     }
     componentDidMount() {
-        console.log("parent componentDidMount() is Called");
+        console.log("Parent componentDidMount() is Called");
     }
     render() {
-        console.log("parent render called");
+        console.log("Parent render called");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -24988,11 +24988,19 @@ class About extends (0, _react.Component) {
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
-                    name: "Aryan Gupta",
+                    name: "First",
                     location: "Bangalore"
                 }, void 0, false, {
                     fileName: "src/components/About.js",
                     lineNumber: 26,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
+                    name: "Second",
+                    location: "Mumbai"
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 27,
                     columnNumber: 17
                 }, this)
             ]
@@ -25010,7 +25018,7 @@ exports.default = About;
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./UserClass":"dHre4","react":"jMk1U"}],"dHre4":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U","./UserClass":"dHre4"}],"dHre4":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$05f4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$05f4.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -25029,13 +25037,13 @@ class User extends (0, _reactDefault.default).Component {
         this.state = {
             count: 0
         };
-        console.log("Child constructor is called");
+        console.log(this.props.name + "Child constructor is called");
     }
     componentDidMount() {
-        console.log("Child componentDidMount() is called");
+        console.log(this.props.name + "Child componentDidMount() is called");
     }
     render() {
-        console.log("Child render is called");
+        console.log(this.props.name + "Child render is called");
         const { name, location } = this.props;
         const { count } = this.state;
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
