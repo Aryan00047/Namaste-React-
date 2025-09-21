@@ -106,4 +106,18 @@ Parent Render
 
 Parent componentDidMount()
 
-Can refer react lifecycle proce chart
+Can refer react lifecycle method chart
+
+<----------------------------------------------------------------------------------------------------------------->
+
+Lifecycle methods:
+
+Mounting:
+First the component is rendered, then it is compiled(componentDidMount())
+
+Updating:
+When a state is set, react again renders and then it compiles using (componentDidUpdate())
+
+UnMounting:
+Whenever the component closes(switching the tab), componentWillUnmount(()) is called
+

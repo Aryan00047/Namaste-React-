@@ -30,3 +30,10 @@ Outlet is a component given by react-router-dom for rendering children condition
 <Link /> is a special component given by reaact-router-dom and behind the scenes it uses <a> tag. 
 It is a wrapper over <a/> tag. ReactRouterDOM keeps track and prevents refreshing of page. Browser understands <a/> tag.
 
+React first mounts the new component and then unmount the component not required. That's why you see About rendered before 
+Contact unmounted.
+
+✅ Why React does this
+React wants to avoid a “gap” where nothing is on screen.
+If it unmounted <Contact> before rendering <About>, you’d see a flicker (blank UI).
+By mounting the new component first, React ensures smooth transitions.

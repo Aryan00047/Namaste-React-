@@ -23,8 +23,8 @@ class About extends Component{
         return(
             <div>
                 <h1>About US</h1>
-                <User name={"First"} location={"Bangalore"}/>
-                <User name={"Second"} location={"Mumbai"}/>
+                <User name={"Aryan"} location={"Bangalore"}/>
+                {/* <User name={"Second"} location={"Mumbai"}/> */}
             </div>
         )
     }
