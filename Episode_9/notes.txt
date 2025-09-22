@@ -1,0 +1,12 @@
+Single Responsiblity Principle: 
+Each component shuld have a single responsiblity:
+Keeping code modular and small intp components helps it become Reusabel, Testable , Maintainable
+
+Your code should be readable, so that others can also read it easily
+
+Custom Hooks:
+Our code will be more optimized because of custom hook.
+
+We write custom hooks in utils, and its better to have seperate file for each hook.
+
+Creating custom hook is not mandatory, but it is good way to write code.
