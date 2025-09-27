@@ -16325,7 +16325,11 @@ const Header = ()=>{
         columnNumber: 9
     }, undefined);
 };
-_s(Header, "0liexyOXwReHVQp7fWoo1EVWpfQ=");
+_s(Header, "ijMhzbVP9mvM40MagCeajmZSUzs=", false, function() {
+    return [
+        (0, _onlineStatusDefault.default)
+    ];
+});
 _c = Header;
 exports.default = Header;
 var _c;
@@ -24538,7 +24542,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _s = $RefreshSig$();
-const OnlineStatus = ()=>{
+const useOnlineStatus = ()=>{
     _s();
     const [isOnline, setIsOnline] = (0, _react.useState)(true);
     (0, _react.useEffect)(()=>{
@@ -24551,11 +24555,8 @@ const OnlineStatus = ()=>{
     }, []);
     return isOnline;
 };
-_s(OnlineStatus, "mRBquyBAMh60D2Q5WI/A8/L/7j4=");
-_c = OnlineStatus;
-exports.default = OnlineStatus;
-var _c;
-$RefreshReg$(_c, "OnlineStatus");
+_s(useOnlineStatus, "mRBquyBAMh60D2Q5WI/A8/L/7j4=");
+exports.default = useOnlineStatus;
 
   $parcel$ReactRefreshHelpers$128d.postlude(module);
 } finally {
@@ -24689,8 +24690,9 @@ const Body = ()=>{
         columnNumber: 5
     }, undefined);
 };
-_s(Body, "yY4Rmgb0227wND3EBQAU45Op11s=", false, function() {
+_s(Body, "dnTruAOsb7R03ZVUCkvWnwkQz0g=", false, function() {
     return [
+        (0, _onlineStatusDefault.default),
         (0, _useRestaurantDetailsDefault.default)
     ];
 });

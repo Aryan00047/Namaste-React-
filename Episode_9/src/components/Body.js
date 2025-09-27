@@ -3,10 +3,10 @@ import RestCards from "./RestCards";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useRestaurantDetails from "../utils/useRestaurantDetails";
-import OnlineStatus from "./OnlineStatus";
+import useOnlineStatus from "./OnlineStatus";
 
 const Body = () => {
-  const isOnline = OnlineStatus();
+  const isOnline = useOnlineStatus();
   const [list, setList] = useState([]);
   const {allRestaurants, isLoading} = useRestaurantDetails();
   const [showFiltered, setShowFiltered] = useState(true);

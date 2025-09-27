@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const OnlineStatus = () => {
+const useOnlineStatus = () => {
     const [isOnline, setIsOnline] = useState(true);
 
     useEffect(() => {
@@ -16,4 +16,4 @@ const OnlineStatus = () => {
     return isOnline;
 }
 
-export default OnlineStatus;
+export default useOnlineStatus;

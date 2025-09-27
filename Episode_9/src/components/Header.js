@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { LOGO_URL } from "../utils/constants";
 import {Link} from "react-router-dom";
-import OnlineStatus from "./OnlineStatus";
+import useOnlineStatus from "./OnlineStatus";
 
 const Header = () =>{
     const [btn, setBtn] = useState("Login");
-    const isOnline = OnlineStatus();
+    const isOnline = useOnlineStatus();
 
     return(
         <div className="header">
