@@ -3,8 +3,10 @@ import RestCards from "./RestCards";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useRestaurantDetails from "../utils/useRestaurantDetails";
+import OnlineStatus from "./OnlineStatus";
 
 const Body = () => {
+  const isOnline = OnlineStatus();
   const [list, setList] = useState([]);
   const {allRestaurants, isLoading} = useRestaurantDetails();
   const [showFiltered, setShowFiltered] = useState(true);
@@ -31,6 +33,10 @@ const Body = () => {
         setList(allRestaurants);
 }, [allRestaurants]);
 
+  if(isOnline === false){
+    return <h1>Offline, Please check your internet connection!!</h1>
+  }
+  else{
   return isLoading ? (<Shimmer/>) : (
     <div>
       <div className="buttons">
@@ -51,7 +57,7 @@ const Body = () => {
           ))}
       </div>
     </div>
-  );
+  );}
 };
 
 export default Body;

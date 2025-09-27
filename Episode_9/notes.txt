@@ -10,3 +10,5 @@ Our code will be more optimized because of custom hook.
 We write custom hooks in utils, and its better to have seperate file for each hook.
 
 Creating custom hook is not mandatory, but it is good way to write code.
+While creating custome hook first creat contract(see what needs to be taken as parameter and what needs to be returned).
+This makes creation of custom hook easy.
