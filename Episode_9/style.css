@@ -108,11 +108,27 @@ body {
   background-color: #f0f0f0;
 }
 
-.login-btn{
+.login-section {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between button and dot */
+}
+
+.login-btn {
   background-color: #f0f0f0;
   border: 1px solid black;
-  padding: 5px 10px;
+  padding: 10px 20px;   /* bigger button */
+  font-size: 16px;      /* larger text */
+  font-weight: bold;
+  border-radius: 6px;   /* optional rounded button */
+  cursor: pointer;
 }
+
+.status-dot {
+  font-size: 14px;   /* makes dot smaller */
+  line-height: 1;
+}
+
 .menu-card {
   display: flex;
   flex-direction: column; /* Stack content vertically */

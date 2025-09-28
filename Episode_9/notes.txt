@@ -13,3 +13,18 @@ Creating custom hook is not mandatory, but it is good way to write code.
 While creating custome hook first creat contract(see what needs to be taken as parameter and what needs to be returned).
 This makes creation of custom hook easy. Name custome hook with use prefix.(it is a recommendation from react but not mandatory).
 This helps other developers or readers to identify it as a hook.
+
+How to optimize the applicatoin:
+
+Lazy loading - it loades the component when required. (It loads for the first time , and after that it is cached).
+Chunking, Code Splitting, Dynamic Building,on demand loading, dynamic import these all are same trems for lazy loading(important for interview)
+You can see in network tab, js files are loaded in chunks. Without this, there will be only single js file , its size will be huge.
+This will make loading very slow for large applications and in production.
+
+Lazy loadin takes some time to load the component, so we can use Suspense component of react to show some fallback UI till the component is loading
+and wrap the lazy loaded component inside Suspense component, so that react loads the component without any error, else it will throw error
+because react is fast and lazy loading takes some time.
+
+Lazy loading is required for large components.
+
+This is how we optimise them. This is very important for large scale applications and interview.
