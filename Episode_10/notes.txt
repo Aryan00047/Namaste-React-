@@ -1,0 +1,23 @@
+sass and scss ---- 
+<This is not a recommended way to write css in react>
+
+styled components is another way to write css. Industries use this a lot.
+material ui or chakra ui are component libraries which use styled components internally.
+They give pre styled components which we can use directly.
+Bootstrap also uses styled components internally.
+ant design is another component library which uses styled components internally.S
+
+You can use any of these libraries.
+
+Tail wind css: uses POSt CSS behind the scenes.
+Post CSS is a tool to transform css with js.
+import tailwind into css file
+
+tailwind css is very loght weight, and parcel will only include/import the css required on the web page. The classes are icluded 
+once , even if used multiple times.
+
+disadvantage: class names are big and it makes out code looks ugly.
+
+to add custom styles , w-[200px] this way we can add custome styles
+
+you can configure css according to conditions, refer header part.
