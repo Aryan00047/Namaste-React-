@@ -2,3 +2,12 @@ Higher ORder Component- takes component as input and returns (modified,enhanced/
 
 These are pure functions(it will not change anything of the component passed to it)
 We only enhance the component passed to it.
+
+important part of react application is to manage its data. UI is static , does not have logic of its own.
+UI is different part and data is different part. All applications have two layers:
+Data Layer - consists of state, props, local variables ....
+UI Layer - powered by data layer.
+
+If you how to manage the data part in application, your application will be super fast.
+
+In this episdoe, we will learn about data layer.

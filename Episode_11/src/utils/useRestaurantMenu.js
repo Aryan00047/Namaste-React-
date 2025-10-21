@@ -1,27 +1,28 @@
 import { useEffect, useState } from "react";
-import { MENU_URL } from "./constants";
+import { mockMenu } from "./mockMenu";
 
-const useRestaurantMenu = (resId) => {
+const useRestaurantMenu = () => {
+  const [resInfo, setResInfo] = useState([]);
 
-    const [resInfo, setResInfo] = useState([]);
+  useEffect(() => {
+    // Directly use mockMenu (already an object)
+    const data = mockMenu?.data;
+    const menuCards = data?.groupedCard?.cardGroupMap?.REGULAR?.cards;
 
-    useEffect( ()=> {
-        const fetchInfo = async () => {
-         const res = await fetch(MENU_URL+ resId);
-         const data = await res.json();
-         //  const list = data?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards;
-         const groupedCard = data?.data?.cards?.find((c) => c.groupedCard?.cardGroupMap?.REGULAR);
-         const menuCards = groupedCard?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+    // Extract all categories that contain itemCards
+    const itemCategories = menuCards?.filter((c) => c.card?.card?.itemCards);
 
-         // Find the first card that actually has itemCards
-         const itemCategory = menuCards?.find((c) => c.card?.card?.itemCards);
-         const list = itemCategory?.card?.card?.itemCards || [];
-         const items = list?.map(item => item?.card?.info);
-         setResInfo(items); 
-        };
-        fetchInfo();
-    },[])
-    return resInfo;
-}
+    // Flatten all itemCards across categories
+    const items = itemCategories
+      ?.flatMap((cat) =>
+        cat.card.card.itemCards?.map((item) => item.card.info)
+      )
+      ?.filter(Boolean);
+
+    setResInfo(items || []);
+  }, []);
+
+  return resInfo;
+};
 
 export default useRestaurantMenu;

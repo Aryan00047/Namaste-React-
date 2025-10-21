@@ -7,6 +7,9 @@
     "build": "parcel build index.html",
     "test": "jest"
   },
+  "staticFiles": {
+    "staticPath": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aryan00047/Namaste-React-.git"
@@ -22,6 +25,7 @@
     "@tailwindcss/postcss": "^4.1.14",
     "autoprefixer": "^10.4.21",
     "parcel": "^2.15.2",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.3.3"
   },
