@@ -1,0 +1,4 @@
+Higher ORder Component- takes component as input and returns (modified,enhanced/tweaked) component as output.
+
+These are pure functions(it will not change anything of the component passed to it)
+We only enhance the component passed to it.
