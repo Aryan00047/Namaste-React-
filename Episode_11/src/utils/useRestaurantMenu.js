@@ -10,16 +10,17 @@ const useRestaurantMenu = () => {
     const menuCards = data?.groupedCard?.cardGroupMap?.REGULAR?.cards;
 
     // Extract all categories that contain itemCards
-    const itemCategories = menuCards?.filter((c) => c.card?.card?.itemCards);
+    const itemCategories = menuCards?.filter((c) => c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
 
+    // console.log(itemCategories);
     // Flatten all itemCards across categories
-    const items = itemCategories
-      ?.flatMap((cat) =>
-        cat.card.card.itemCards?.map((item) => item.card.info)
-      )
-      ?.filter(Boolean);
+    // const items = itemCategories
+    //   ?.flatMap((c) =>
+    //     c.card.card.itemCards?.map((item) => item.card.info)
+    //   )
+    //   ?.filter(Boolean);
 
-    setResInfo(items || []);
+    setResInfo(itemCategories || []);
   }, []);
 
   return resInfo;

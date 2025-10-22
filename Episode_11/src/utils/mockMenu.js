@@ -1,3 +1,5 @@
+import paneer_butter from "../../public/images/paneer_butter.webp";
+
 export const mockMenu = {
   "statusCode": 0,
   "data": {

@@ -11,3 +11,9 @@ UI Layer - powered by data layer.
 If you how to manage the data part in application, your application will be super fast.
 
 In this episdoe, we will learn about data layer.
+
+//we will work on accordion.
+Accordion is closing and opening of items on click.
+
+in js, we don't use @types --- we can use types directly but to use @types we need to add it in ['@types'] in json structure 
+while fetching api.
