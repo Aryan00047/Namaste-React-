@@ -17,3 +17,12 @@ Accordion is closing and opening of items on click.
 
 in js, we don't use @types --- we can use types directly but to use @types we need to add it in ['@types'] in json structure 
 while fetching api.
+
+controlled and uncontrolled components:
+if restaurant was controlling itself for showItems then it was uncontrolled component. but if we give that power to parent 
+component then it is controlled component.
+
+we cannot directly change the stae of parent component through child component but can change indirectly by passing 
+setState function as prop to child component.
+
+Lifting state up - advanced concept- sometimes we have to lift the state of child component to parent component to manage the state
