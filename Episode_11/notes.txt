@@ -26,3 +26,49 @@ we cannot directly change the stae of parent component through child component b
 setState function as prop to child component.
 
 Lifting state up - advanced concept- sometimes we have to lift the state of child component to parent component to manage the state
+
+Props Drilling - 
+Passing props through mmutiple levels of components just to reach the component which needs that prop, because react 
+is a single flow language. 
+Parent -> Child -> GrandChild -> GreatGrandChild -> .... -> TargetComponent
+
+This is not a good practice and to solve this we use context.
+
+React gives ability to create context.
+
+useContext is imported from react library. We can create multiplte contexts.
+ We can get context data anywhere in the app.
+
+ Only data which can be used or is being used in multiple components should be put in context.
+
+ In class based components, to use context we use component as <UserContext.Consumer> {(data) => <h1>(data)</h1>}</UserContext.Consumer>
+
+ To pass a same value across all the application we use provider in context.
+We can use multiple contexts like:
+
+Default value is :Default User
+
+<App/> --- will have default value
+<userContext.Provider value={"Namaste React"}>
+<Header/> --- will have value as Namaste React
+<userContext.Provider value={"Demo User"}>
+<Store/> --- will have value as Demo User
+</userContext.Provider> 
+</userContext.Provider>
+
+
+we can also set the values using context across the whole application.... This is a super power that context have.
+Even if we change value in an individual component, context shares that value with every wrapped component(even within lazy loaded
+components).
+
+Data Management Library : Like redux. In small to mid applications we can use context without needing any data management library.
+
+What is Redux: State management library, it is not inside redux .
+
+Can we use context in large applications?
+Yes, we can use , but redux is scalable and using context we have to create different different context for different type of data.
+But redux is mostly preffered.
+
+Redux offers: Redux thunk - middleware....
+
+We can use context till mid applications but when our application becomes large, redux comes into picture.

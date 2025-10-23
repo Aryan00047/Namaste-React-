@@ -1,0 +1,33 @@
+Redux:
+
+Redux is not mandatory.... Most people start using from day one but they don't know if it is even requierd?
+React and Redux are different libraries.
+Zustand is also a state management library --- used in many companies. Like this there are many state management libraries.
+
+Advantages of using Redux:
+Applicatoins become easier to debug. (using Redux Dev Tools)
+
+Redux is used mostly used with React but it is also used with other frameworks and libraries.
+There are two librries of redus: React Redux and Redux Toolkit
+React-Redux is a bridge between React and Redux. 
+
+Today, we are going to learn Redux Toolkit: It is a modern way to write code and most tutorials are on  old way of writig redux.
+Redux comes with a huge learning curve and vanilla redux was more complicated than redux-tookit.
+
+Slices in redux store means seperate logical parts for diffreent usecases.
+
+We can't directly modify the slices. First we have to dispatch action. Then it calls a Reducer function and that function modifies the slice of the store.
+
+For Writing Data:
+ADD Button in menu ---> dispatches action ---> calls a function(Reducer) ---> internally modifies cart slice.
+
+For Reading Data:
+We use Selector for this.
+
+Cart Slice ---> Selector ---> Cart Symbol in header reads the data
+
+This phenomenon of using selector is known as subscribing to the store.(data is in sync with the store)
+
+
+
+
