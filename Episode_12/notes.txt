@@ -29,5 +29,69 @@ Cart Slice ---> Selector ---> Cart Symbol in header reads the data
 This phenomenon of using selector is known as subscribing to the store.(data is in sync with the store)
 
 
+Click Add ---> Dispatches action ---> Reducer Fn called ---> slice of the store modified --->      selector is used    ---> cart icon is updated
+                                                                                              (subscribing to the store)
 
+We will install @reduxjs/toolkit and react-redux
+Build our Store
+Connect our store to the app
+Slice (cartSlice)
+Dispatch(action)
+Selector
 
+configureStore is imported from redu toolkit.
+
+Provider is imported from react-redux.
+
+It takes a configuration to create a slice:
+1. name
+2. initial State --- objet
+3. reducers --- object: contains action with reducer fn attatched to it. 
+Reducer fn gets two params state and action
+
+can avoid writing action when not needed
+
+//this is the syntax given by redux for exporting
+export const {addItem, removeItem, clearCart} = cartSlice.actions;
+export default cartSlice.reducer;
+
+cartSlice will look :
+cartSlice:{
+    actions:{},
+    reducer
+}
+
+thats why we are exporint action and reducer seperately
+
+We modify state based on the action.
+
+adding slice to the store:
+
+big stores also have reducers:
+so configureStore({
+    reducer:{this reducers contain small reducers
+        cart: cartReducer,
+    },
+});
+
+Subscribing to the store:
+A selector is ok inside react
+
+ onClick={() => handleAddItem(item)} --- don't do onClick = {handleClick(item)}
+
+ What is the difference b/w onClick = {handleClick(item)} and onClick = {() => handleClick(item)} and onClick = {handleClick} ?
+
+ Interview Question:
+ Whenever you are creating selector, make sure you are subscribing to the right portino of the store, otherwise it will be a 
+ huge performance issue.
+  const store = useSelector((store) => store)
+  const cartItems = store.cart.items;
+
+  this is a wrog way because we will be subscribing to whole store and checking updates for all items in the store. But this will
+  lead to a huge performance issue because redix is a power heavy tool.
+
+  In store we have reducer(which contains multiple reducer) and in slices we have reducers(because here we have many reducer fns)
+
+  A Reducer can be a combination of small reducers and Reducers is a combination of small reducer fns.
+
+  <History of Redux:> (This will be very important during interviews)

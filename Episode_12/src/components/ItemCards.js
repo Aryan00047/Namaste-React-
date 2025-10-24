@@ -1,7 +1,20 @@
-const ItemCards = ({ info }) => {
+import { useDispatch } from "react-redux";
+import { addItem } from "../slices/cartSlice";
+
+const ItemCards = ({ info , isCart = false}) => {
+
+    const dispatch = useDispatch();
+
+    const handleAddItem = (item) => {
+        dispatch(addItem(item));
+    }
+    const itemsToRender = isCart
+    ? info // already an array of items
+    : info?.card?.card?.itemCards || [];
+
     return (
         <div>
-          {info?.card?.card?.itemCards?.map((item) => (
+          {itemsToRender?.map((item) => (
             <div key={item?.card?.info?.id} className="m-4 p-2 border-b-2 border-gray-200 flex">
                 <div className="flex-1">
                 <div>
@@ -13,7 +26,9 @@ const ItemCards = ({ info }) => {
                 </div>
                 </div>
                 <div>
-                    <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-1 px-4 rounded-lg shadow-md">ADD</button>
+                    <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-1 px-4 rounded-lg shadow-md"
+                    onClick={() => handleAddItem(item)}
+                    >ADD</button>
                 </div>
         </div>
     ))}
