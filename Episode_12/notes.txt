@@ -132,3 +132,25 @@ Redux Dev Tools: It is a very powerful tool for debugging and tracking states or
 
 RTK Query:  In older versions of Redux, we used to use middlewares like redux thunkx.
 Go and see the documentation and try to work on RTK yourself.
+
+Why to write test cases?
+Testing is a huge domain itself.
+Different types of testing a developer can do: 
+1. Manual Testing
+2. Code
+
+Three types of Testing that a developer can do:
+1. Unit Testing --- Test components in isolation
+2. Integeration Testing --- Testing integeration of the components
+3. End to End(e2e) Testing --- Testing a react application as soon as user lands on the page until it exits the page.
+(Requires different types of tools).
+
+As a developer we are majorly concerned about first two types of testing.
+
+We are going to use React Testing Library: Built on top of DOM Testing library. It comes with create-react-app.
+We have written every code from scratch, we need to integerate RTL ourselves.
+
+RTL uses jest. Jest is a delightful JS Testing Framework. RTL needs jest also. Jest uses babel.
+
+__tests__ ---> all test files will be here and jest looks for a format to know which files are test files
+like spec.ts, .js, .ts

@@ -22,14 +22,22 @@
   },
   "homepage": "https://github.com/Aryan00047/Namaste-React-#readme",
   "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
     "@tailwindcss/postcss": "^4.1.14",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
     "autoprefixer": "^10.4.21",
+    "babel-jest": "^30.2.0",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
     "parcel": "^2.15.2",
     "parcel-reporter-static-files-copy": "^1.5.3",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.28.5",
     "@reduxjs/toolkit": "^2.9.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

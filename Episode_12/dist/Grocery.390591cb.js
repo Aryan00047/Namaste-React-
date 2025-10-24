@@ -726,14 +726,87 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Grocery = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Have groceries delieverd to you in 10 mins!"
-        }, void 0, false, {
-            fileName: "src/components/Grocery.js",
-            lineNumber: 5,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "Have groceries delieverd to you in 10 mins!"
+                    }, void 0, false, {
+                        fileName: "src/components/Grocery.js",
+                        lineNumber: 6,
+                        columnNumber: 16
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        children: " Add Grocery"
+                    }, void 0, false, {
+                        fileName: "src/components/Grocery.js",
+                        lineNumber: 7,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Grocery.js",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: "Name:"
+                        }, void 0, false, {
+                            fileName: "src/components/Grocery.js",
+                            lineNumber: 11,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            placeholder: "name",
+                            type: "text"
+                        }, void 0, false, {
+                            fileName: "src/components/Grocery.js",
+                            lineNumber: 12,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            fileName: "src/components/Grocery.js",
+                            lineNumber: 13,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: "Card Details"
+                        }, void 0, false, {
+                            fileName: "src/components/Grocery.js",
+                            lineNumber: 14,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text"
+                        }, void 0, false, {
+                            fileName: "src/components/Grocery.js",
+                            lineNumber: 15,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            type: "submit",
+                            children: "submit"
+                        }, void 0, false, {
+                            fileName: "src/components/Grocery.js",
+                            lineNumber: 16,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Grocery.js",
+                    lineNumber: 10,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Grocery.js",
+                lineNumber: 9,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/Grocery.js",
         lineNumber: 4,
         columnNumber: 9
