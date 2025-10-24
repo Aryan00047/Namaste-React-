@@ -95,3 +95,40 @@ A selector is ok inside react
   A Reducer can be a combination of small reducers and Reducers is a combination of small reducer fns.
 
   <History of Redux:> (This will be very important during interviews)
+
+  Vanilla Redux:
+    //vanilla redux => Don't mutate the state
+    //create new state and modify that
+        const newState = [...state];
+        newState.items.push(action.payload);
+
+Earlier returning was mandatory, now its not(redux take care of it automatically)
+
+  //Redux Toolkit - says Mutate the state
+            //mutating the state here
+            state.items.push(action.payload); 
+
+Even if we are mutating direclty, behind the scenes redux is again creating immutable state....
+Its just developers don't have to take care of it.
+Redux behind the scenes uses immer
+
+clearCart: (state) => {//can avoid writing action when not needed,
+            state.items.length = 0;            
+        },
+here if we do state = [];
+it won't work .... , It just adds a reference to th state.
+Also. state is a local variable and if we do state = [], then state chages locally not globally
+
+//original state : {
+    items:[]
+}
+in clearCart we can do two things:
+state.items.length === 0;
+or return {items: []} // this new object will be replaced inside original state [].
+
+RTK says: Either you can mutate the state or return a new state.
+
+Redux Dev Tools: It is a very powerful tool for debugging and tracking states or how ui will look at certain state.
+
+RTK Query:  In older versions of Redux, we used to use middlewares like redux thunkx.
+Go and see the documentation and try to work on RTK yourself.

@@ -7,6 +7,13 @@ const cartSlice = createSlice ({
     },
     reducers: {
         addItem: (state, action) => {
+
+            //vanilla redux => Don't mutate the state
+            //create new state and modify that
+            // const newState = [...state];
+            // newState.items.push(action.payload);
+            
+            //Redux Toolkit - says Mutate the state
             //mutating the state here
             state.items.push(action.payload); 
         },
